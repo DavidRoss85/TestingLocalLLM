@@ -16,7 +16,7 @@ tokenizer = AutoTokenizer.from_pretrained(local_model_path, use_fast=True)
 
 model = AutoModelForCausalLM.from_pretrained(local_model_path, attn_implementation="eager")
 messages = [
-    {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"},
+    {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak! Only generate your words or actions."},
     {"role": "user", "content": "Who are you?"},
 ]
 

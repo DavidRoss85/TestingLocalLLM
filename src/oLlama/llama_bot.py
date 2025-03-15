@@ -1,4 +1,4 @@
-
+#https://github.com/ollama/ollama/blob/main/README.md
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 import os
@@ -140,16 +140,16 @@ class LLMBot:
 
 #Testing::
 
-# x = LLMBot("mistral","Mistral AI","Johnny",personality_key="Aggressive",occupation_key="Pikachu",setting_key="Western")
-# x.print_stats()
-# print("\n\n")
-# print("history",x.get_history())
-# print("response",x.get_response_to_speech("What you gonna do about it?"))
-# print("response",x.get_response_to_speech("Take that!"))
-# print("response",x.get_response_to_speech("I'm gonna call Jimmy Joe out if you don't behave!"))
-# print("response", x.get_response_to_event("Player makes an outstanding move!"))
-# print("response",x.get_response_to_speech("Fine, I give up."))
-# print("\n\n\n------------------------------\n")
-# print("history",x.get_history())
-# print("\n\n\n------------------------------\n")
-# print("history",x.get_game_setup())
+x = LLMBot("gemma3:12b","Gemma","Johnny",personality_key="Love Struck",occupation_key="General",setting_key="Western")
+x.print_stats()
+print("\n\n")
+print("history",x.get_history())
+print("response",x.get_response_to_speech("What you gonna do about it?"))
+print("response",x.get_response_to_speech("Take that!"))
+print("response",x.get_response_to_speech("I'm gonna call Jimmy Joe out if you don't behave!"))
+print("response", x.get_response_to_event("Player makes an outstanding move!"))
+print("response",x.get_response_to_speech("Fine, I give up."))
+print("\n\n\n------------------------------\n")
+print("history",x.get_history())
+print("\n\n\n------------------------------\n")
+print("history",x.get_game_setup())
